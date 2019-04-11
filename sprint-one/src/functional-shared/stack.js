@@ -21,7 +21,7 @@ stackMethods.push = function(str) {
   this.counter += 1;
   // put item where key = counter and value = str into storage
   this.storage[this.counter] = str;
-}
+};
 
 
 // I - none
@@ -30,7 +30,7 @@ stackMethods.push = function(str) {
 // E - if stack is empty return zero
 stackMethods.size = function() {
   return this.counter;
-}
+};
 
 // I - none
 // O - the item removed from array
@@ -44,14 +44,14 @@ stackMethods.pop = function() {
   // return the previously stored item
   // add an if condition to address if storage size is zero.
   
-  if(this.counter > 0){
+  if (this.counter > 0) {
     var result = this.storage[this.counter];
     delete this.storage[this.counter];
     this.counter -= 1; 
     return result; 
   } 
   
-}
+};
 
 // let stack = Stack();
 // stack.push('a');
