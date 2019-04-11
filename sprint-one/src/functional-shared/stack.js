@@ -53,10 +53,10 @@ stackMethods.pop = function() {
   
 };
 
-// let stack = Stack();
-// stack.push('a');
-// stack.push('b');
-// stack.push('c');
-// stack.pop();
-// console.log(stack.pop());
+let stack = Stack();
+stack.push('a');
+stack.push('b');
+stack.push('c');
+stack.pop();
+console.log(stack.pop());
 
