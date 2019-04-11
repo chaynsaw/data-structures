@@ -41,9 +41,9 @@ class Queue {
 }
 
 
-let queue = new Queue();
-queue.enqueue('a');
-queue.enqueue('b');
-queue.dequeue();
-queue.enqueue('c');
-console.log(queue.dequeue());
+// let queue = new Queue();
+// queue.enqueue('a');
+// queue.enqueue('b');
+// queue.dequeue();
+// queue.enqueue('c');
+// console.log(queue.dequeue());
