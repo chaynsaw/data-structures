@@ -1,7 +1,7 @@
 var Queue = function() {
   // Hey! Rewrite in the new style. Your code will wind up looking very similar,
   // but try not not reference your old code in writing the new style.
-  // attach methods to this constructor object
+  // attach methods to thi constructor object
   var queue = {};
   // add storage to store items of the queue
   queue.storage = {};
@@ -40,7 +40,7 @@ queueMethods.dequeue = function() {
   var result = this.storage[1]; 
   delete this.storage[1];
   for (var key in this.storage) { 
-    this.storage[key] = this.storage[key + 1];
+    this.storage[1] = this.storage[key];
   }
   delete this.storage[this.counter];
   if (this.counter > 0) {
@@ -57,9 +57,10 @@ queueMethods.size = function() {
   // return Object.keys(.storage).length;
 };
 
-// let queue = Queue();
-// queue.enqueue('a');
-// expect(queue.dequeue()).to.equal('a');
-// queue.enqueue('b');
-// expect(queue.dequeue()).to.equal('b');
+let queue = Queue();
+queue.enqueue('a');
+queue.enqueue('b');
+queue.dequeue();
+queue.enqueue('c');
+console.log(queue.dequeue())
 
