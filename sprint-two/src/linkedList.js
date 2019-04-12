@@ -48,7 +48,7 @@ var LinkedList = function() {
         if (temp.next === null){
           break;
         }
-        temp = temp.next
+        temp = temp.next;
       }
 
     }
