@@ -54,8 +54,9 @@ treeMethods.contains = function(target) {
     return true;
   } 
   for (var i = 0; i < this.children.length; i++) {
+    // return this.children[i].contains(target)
     if (this.children[i].contains(target)) {
-      return true;
+      return true
     }
   }
   return false;
