@@ -44,4 +44,3 @@ let stack = new Stack();
 stack.push('a');
 stack.pop();
 stack.push('b');
-console.log(stack.pop())

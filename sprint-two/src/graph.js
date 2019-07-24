@@ -78,7 +78,6 @@ Graph.prototype.addEdge = function(fromNode, toNode) {
 	this.edgeList[toNode] = [];
 	this.edgeList[toNode].push(fromNode);
 	this.edgeList[toNode].push(toNode);
-	console.log(this)
 };
 
 // Remove an edge between any two specified (by value) nodes.
@@ -112,8 +111,6 @@ Graph.prototype.forEachNode = function(cb) {
 	this.nodeList.forEach(function(element){
 		cb(element);
 	})
-	console.log(this.nodeList)
-	console.log(this.nodeList)
 
 };
 
@@ -125,6 +122,4 @@ var graph = new Graph();
 graph.addNode(4);
 graph.addNode(5);
 graph.addEdge(5, 4);
-console.log(graph.hasEdge(4, 5))
 graph.removeNode(5);
-console.log(graph.hasEdge(4, 5))

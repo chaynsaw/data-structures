@@ -73,7 +73,3 @@ var Node = function(value) {
 var linkedList = LinkedList();
 linkedList.addToTail(4);
 linkedList.addToTail(5);
-console.log(linkedList.contains(4));
-console.log(linkedList.contains(5));
-console.log(linkedList.contains(6));
-
