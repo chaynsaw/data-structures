@@ -9,6 +9,7 @@ var BinarySearchTree = function(value) {
 var bst = {};
 
 bst.insert = () => {
+  
 }
 
 bst.contains = () => {
