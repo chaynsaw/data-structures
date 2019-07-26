@@ -26,7 +26,7 @@ bst.insert = function (value) {
   }
 }
 
-bst.contains = function(value) {
+bst.contains = function(value) {  
   if (this.value === value) {
     return true;
   } else if (value > this.value && this.right !== null) {
@@ -38,12 +38,21 @@ bst.contains = function(value) {
   }
 }
 
-bst.depthFirstLog = () => {
+bst.depthFirstLog = function(callback) {
+  callback(this.value)
+  if (this.left) {
+    this.left.depthFirstLog(callback);
+  } 
+  if (this.right) {
+    this.right.depthFirstLog(callback);
+  }
 }
 /*
  * Complexity: What is the time complexity of the above functions?
  */
-var binarySearchTree = BinarySearchTree(5)
-binarySearchTree.insert(2);
-binarySearchTree.insert(3);
-binarySearchTree.insert(7);
+// var binarySearchTree = BinarySearchTree(5)
+// binarySearchTree.insert(2);
+// binarySearchTree.insert(3);
+// binarySearchTree.insert(7);
+// var func = function(value) { array.push(value); };
+// var array = [];
